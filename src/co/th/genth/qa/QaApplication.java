@@ -1,5 +1,7 @@
 package co.th.genth.qa;
 
+import co.th.genth.qa.ui.StaffUI;
+
 import com.vaadin.Application;
 import com.vaadin.ui.*;
 
@@ -51,6 +53,10 @@ public class QaApplication extends Application {
          
         Button ok = new Button("Login");
         custom.addComponent(ok, "okbutton");
+        
+        StaffUI staffUI = new StaffUI();
+        
+        layout.addComponent(staffUI);
     }
 
 }
